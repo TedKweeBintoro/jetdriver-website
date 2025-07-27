@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Jet Drivers | Luxury Driving Services</title>
+    <link rel="icon" type="image/png" href="media/jet-drivers-favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <main>
+        <section class="contact-hero">
+            <div class="container">
+                <h1>Contact Jet Drivers</h1>
+                <p class="subtitle">Precision. Luxury. On Time.</p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-form-section">
+                        <h2>Book Your Luxury Ride</h2>
+                        <form action="https://formspree.io/f/xqalbaed" method="POST" class="booking-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="pickup">Pickup Location</label>
+                                <input type="text" id="pickup" name="pickup" placeholder="Enter pickup address" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="ride-type">Ride Type</label>
+                                <select id="ride-type" name="ride-type" required>
+                                    <option value="">Select ride type</option>
+                                    <option value="destination">Destination Ride</option>
+                                    <option value="hourly">Hourly Ride</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group" id="destination-group">
+                                <label for="destination">Destination</label>
+                                <input type="text" id="destination" name="destination" placeholder="Enter destination address">
+                            </div>
+                            
+                            <div class="form-group" id="hours-group" style="display: none;">
+                                <label for="hours">Number of Hours</label>
+                                <select id="hours" name="hours">
+                                    <option value="">Select hours</option>
+                                    <option value="2">2 hours</option>
+                                    <option value="3">3 hours</option>
+                                    <option value="4">4 hours</option>
+                                    <option value="5">5 hours</option>
+                                    <option value="6">6 hours</option>
+                                    <option value="8">8 hours</option>
+                                    <option value="custom">Custom (specify in message)</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="date">Date</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="time">Time</label>
+                                <input type="time" id="time" name="time" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="passengers">Number of Passengers</label>
+                                <select id="passengers" name="passengers">
+                                    <option value="1">1 passenger</option>
+                                    <option value="2">2 passengers</option>
+                                    <option value="3">3 passengers</option>
+                                    <option value="4">4 passengers</option>
+                                    <option value="5+">5+ passengers</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Additional Information</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Special requests, flight details, or other information"></textarea>
+                            </div>
+                            
+                            <input type="hidden" name="_next" value="/thank-you">
+                            <input type="hidden" name="_subject" value="New Jet Drivers Booking Request">
+                            
+                            <button type="submit" class="submit-btn">Submit Booking Request</button>
+                        </form>
+                    </div>
+                    
+                    <div class="contact-info-section">
+                        <h2>Get in Touch</h2>
+                        <div class="info-card">
+                            <h3>Partner</h3>
+                            <p>Chris Solomon</p>
+                        </div>
+                        
+                        <div class="info-card">
+                            <h3>Phone</h3>
+                            <p><a href="tel:5089335545">508.933.5545</a></p>
+                        </div>
+                        
+                        <div class="info-card">
+                            <h3>Website</h3>
+                            <p><a href="https://jetdrivers.boston" target="_blank">jetdrivers.boston</a></p>
+                        </div>
+                        
+                        <div class="info-card">
+                            <h3>Service Area</h3>
+                            <p>Greater Boston Area<br>
+                            Logan International Airport<br>
+                            All New England Destinations</p>
+                        </div>
+                        
+                        <div class="info-card">
+                            <h3>Operating Hours</h3>
+                            <p>24/7 Service Available<br>
+                            Advanced Reservations Recommended</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="common.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

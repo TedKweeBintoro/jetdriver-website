@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jet Drivers - Luxury Driving Services | Boston</title>
+    <link rel="icon" type="image/png" href="media/jet-drivers-favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>JET DRIVERS</h1>
+                <p class="tagline">Luxury Driving Services</p>
+                <p class="subtitle">Precision. Luxury. On Time.</p>
+                
+                <div class="booking-form-container">
+                    <h2>Quick Booking</h2>
+                    <form id="quick-booking-form" class="booking-form">
+                        <div class="form-group">
+                            <label for="pickup">Pickup Location</label>
+                            <input type="text" id="pickup" name="pickup" placeholder="Enter pickup address" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="ride-type">Ride Type</label>
+                            <select id="ride-type" name="ride-type" required>
+                                <option value="">Select ride type</option>
+                                <option value="destination">Destination Ride</option>
+                                <option value="hourly">Hourly Ride</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group" id="destination-group">
+                            <label for="destination">Destination</label>
+                            <input type="text" id="destination" name="destination" placeholder="Enter destination address">
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Book Now</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Airport Transfers</h3>
+                        <p>Professional and timely transportation to and from Logan International Airport and all regional airports.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Corporate Travel</h3>
+                        <p>Executive transportation services for business meetings, conferences, and corporate events.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Special Events</h3>
+                        <p>Luxury transportation for weddings, proms, concerts, and special occasions.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Hourly Service</h3>
+                        <p>Flexible hourly bookings for multiple stops, city tours, or as-directed service.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-info">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <div class="contact-details">
+                    <p class="partner">Partner: Chris Solomon</p>
+                    <p class="phone"><a href="tel:5089335545">508.933.5545</a></p>
+                    <p class="website">jetdrivers.boston</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="common.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

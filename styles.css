@@ -1,0 +1,571 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-black: #1a1a1a;
+    --secondary-black: #2a2a2a;
+    --accent-gold: #d4af37;
+    --text-light: #ffffff;
+    --text-gray: #cccccc;
+    --bg-dark: #0a0a0a;
+}
+
+body {
+    font-family: 'Playfair Display', 'Georgia', serif;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    line-height: 1.6;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('./background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation */
+.navbar {
+    background-color: rgba(26, 26, 26, 0.95);
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-family: 'Playfair Display', 'Georgia', serif;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--accent-gold);
+}
+
+.phone-number {
+    font-weight: bold;
+    border: 2px solid var(--accent-gold);
+    padding: 8px 20px;
+    border-radius: 25px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('media/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 120px 0 80px;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 72px;
+    letter-spacing: 8px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-family: 'Playfair Display', 'Georgia', serif;
+}
+
+.tagline {
+    font-size: 28px;
+    color: var(--text-gray);
+    margin-bottom: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.subtitle {
+    font-size: 22px;
+    color: var(--accent-gold);
+    margin-bottom: 50px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
+}
+
+/* Booking Form */
+.booking-form-container {
+    background-color: rgba(42, 42, 42, 0.95);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px);
+}
+
+#quick-booking-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#quick-booking-form .form-group {
+    margin-bottom: 25px;
+}
+
+#quick-booking-form .submit-btn {
+    margin-top: 20px;
+}
+
+.booking-form h2 {
+    margin-bottom: 30px;
+    color: var(--accent-gold);
+    font-family: 'Playfair Display', 'Georgia', serif;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text-gray);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-black);
+    border: 1px solid #444;
+    color: var(--text-light);
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-gold);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--accent-gold);
+    color: var(--primary-black);
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #b8941f;
+}
+
+/* Services Section */
+.services {
+    padding: 80px 0;
+    background-color: rgba(26, 26, 26, 0.9);
+}
+
+.services h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: var(--accent-gold);
+    font-family: 'Playfair Display', 'Georgia', serif;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background-color: rgba(42, 42, 42, 0.95);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+    backdrop-filter: blur(10px);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card h3 {
+    color: var(--accent-gold);
+    margin-bottom: 15px;
+    font-family: 'Playfair Display', 'Georgia', serif;
+}
+
+/* Contact Info Section */
+.contact-info {
+    padding: 80px 0;
+    background-color: rgba(10, 10, 10, 0.8);
+    text-align: center;
+}
+
+.contact-info h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: var(--accent-gold);
+    font-family: 'Playfair Display', 'Georgia', serif;
+}
+
+.contact-details {
+    font-size: 20px;
+}
+
+.contact-details .partner {
+    margin-bottom: 10px;
+}
+
+.contact-details .phone {
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+.contact-details .phone a {
+    color: var(--accent-gold);
+    text-decoration: none;
+}
+
+/* Contact Page Styles */
+.contact-hero {
+    padding: 160px 0 100px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('media/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.contact-hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', 'Georgia', serif;
+}
+
+.contact-content {
+    padding: 60px 0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+}
+
+.info-card {
+    background-color: rgba(42, 42, 42, 0.95);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+}
+
+.info-card h3 {
+    color: var(--accent-gold);
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', 'Georgia', serif;
+}
+
+.info-card a {
+    color: var(--text-light);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.info-card a:hover {
+    color: var(--accent-gold);
+}
+
+/* Thank You Page */
+.thank-you-section {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    padding: 140px 0 100px;
+}
+
+.thank-you-content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.checkmark-circle {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 30px;
+}
+
+.checkmark {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 2;
+    stroke: var(--accent-gold);
+    stroke-miterlimit: 10;
+}
+
+.checkmark__circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke: var(--accent-gold);
+    fill: none;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark__check {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.thank-you-message {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.confirmation-text {
+    color: var(--text-gray);
+    margin-bottom: 40px;
+}
+
+.next-steps {
+    background-color: rgba(42, 42, 42, 0.95);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    backdrop-filter: blur(10px);
+}
+
+.next-steps h2 {
+    color: var(--accent-gold);
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', 'Georgia', serif;
+}
+
+.next-steps ul {
+    list-style: none;
+    text-align: left;
+}
+
+.next-steps li {
+    padding: 10px 0;
+    padding-left: 30px;
+    position: relative;
+}
+
+.next-steps li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--accent-gold);
+}
+
+.contact-reminder {
+    margin-bottom: 40px;
+}
+
+.phone-large {
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+.phone-large a {
+    color: var(--accent-gold);
+    text-decoration: none;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background-color: var(--accent-gold);
+    color: var(--primary-black);
+}
+
+.btn-primary:hover {
+    background-color: #b8941f;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--accent-gold);
+    border: 2px solid var(--accent-gold);
+}
+
+.btn-secondary:hover {
+    background-color: var(--accent-gold);
+    color: var(--primary-black);
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-black);
+    padding: 30px 0;
+    text-align: center;
+    border-top: 1px solid #333;
+}
+
+footer p {
+    color: var(--text-gray);
+    margin: 5px 0;
+}
+
+/* 404 Error Page */
+.error-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 140px 0 100px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('media/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.error-content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.error-code {
+    font-size: 120px;
+    font-weight: 700;
+    color: var(--accent-gold);
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', 'Georgia', serif;
+    line-height: 1;
+}
+
+.error-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', 'Georgia', serif;
+}
+
+.error-message {
+    font-size: 20px;
+    color: var(--text-gray);
+    margin-bottom: 10px;
+}
+
+.error-description {
+    font-size: 18px;
+    color: var(--text-gray);
+    margin-bottom: 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.error-actions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .hero h1 {
+        font-size: 40px;
+    }
+    
+    .booking-form-container {
+        padding: 20px;
+    }
+    
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+    }
+}

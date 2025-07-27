@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Car body with wings -->
+  <g transform="translate(100, 100)">
+    <!-- Left wing -->
+    <path d="M -90 0 C -90 -10, -70 -15, -50 -10 L -40 0 L -50 10 C -70 15, -90 10, -90 0" fill="#d4af37" opacity="0.8"/>
+    
+    <!-- Right wing -->
+    <path d="M 90 0 C 90 -10, 70 -15, 50 -10 L 40 0 L 50 10 C 70 15, 90 10, 90 0" fill="#d4af37" opacity="0.8"/>
+    
+    <!-- Car body -->
+    <rect x="-35" y="-15" width="70" height="30" rx="15" fill="#ffffff"/>
+    
+    <!-- Car roof -->
+    <path d="M -20 -15 L -15 -25 L 15 -25 L 20 -15 Z" fill="#ffffff"/>
+    
+    <!-- Windshield -->
+    <path d="M -15 -25 L -12 -20 L 12 -20 L 15 -25 Z" fill="#d4af37" opacity="0.6"/>
+    
+    <!-- Headlights -->
+    <circle cx="-25" cy="-5" r="3" fill="#d4af37"/>
+    <circle cx="25" cy="-5" r="3" fill="#d4af37"/>
+    
+    <!-- Grille -->
+    <rect x="-10" y="-8" width="20" height="2" fill="#d4af37"/>
+    <rect x="-10" y="-4" width="20" height="2" fill="#d4af37"/>
+    <rect x="-10" y="0" width="20" height="2" fill="#d4af37"/>
+    <rect x="-10" y="4" width="20" height="2" fill="#d4af37"/>
+  </g>
+</svg>
