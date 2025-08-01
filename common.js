@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <ul class="nav-links">
                     <li><a href="/">Home</a></li>
                     <li><a href="/contact">Contact</a></li>
-                    <li><a href="tel:5089335545" class="phone-number">508.933.5545</a></li>
+                    <li><a href="tel:6178194551" class="phone-number">617.819.4551</a></li>
                 </ul>
             </div>
         </nav>
